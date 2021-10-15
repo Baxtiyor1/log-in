@@ -27,8 +27,8 @@ async function renderUsers(){
         cloneTemplate.querySelector('#users__name').textContent = obj.first_name;
         cloneTemplate.querySelector('#users__surmane').textContent = obj.last_name;
         let userEmail = cloneTemplate.querySelector('.users__email')
-        // userEmail.textContent = obj.email
-        console.log(userEmail.setAttribute('href', `mailto: + ${obj.email}`))
+        userEmail.textContent = obj.email
+        console.log(userEmail.setAttribute('href', `mailto: ${obj.email}`))
 
         elList.appendChild(cloneTemplate)
         // console.log(obj)
