@@ -1,0 +1,66 @@
+.header{
+    background-color: #000;
+    &__nav{
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+    }
+    &__title{
+        font-weight: bold;
+        font-style: 24px;
+        text-transform: uppercase;
+    }
+    &__btn{
+        padding: 10px 20px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 3px 3px #fff;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover{
+            box-shadow: 0 0 6px 6px #fff;
+        }
+    }
+}
+
+.users{
+    margin-top: 50px;
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+    }
+    &__item{
+        margin:0 15px 15px 0;
+        width: 300px;
+        background-color: rgb(214, 214, 211);
+        border-radius: 10px;
+        &:nth-child(5){
+            margin: 0;
+            margin-bottom: 15px;
+        }
+    }
+    &__img{
+        width: 300px;
+        height: 300px;
+        border-radius: 10px 10px 0 0;
+    }
+    &__box{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__name{
+        margin-top: 15px;
+    }
+    &__email{
+        display: inline-block;
+        margin-top: 15px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
