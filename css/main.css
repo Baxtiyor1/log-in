@@ -49,8 +49,8 @@ body {
   color: #fff;
   border: none;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 3px 3px #fff;
-          box-shadow: 0 0 3px 3px #fff;
+  -webkit-box-shadow: 0 0 2px 2px #fff;
+          box-shadow: 0 0 2px 2px #fff;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -72,6 +72,9 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .users__item {
@@ -123,6 +126,24 @@ body {
   display: inline-block;
   text-decoration: none;
   font-size: 20px;
+}
+
+.users__delete {
+  margin-top: 25px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 3px;
+  background-color: #9d8989;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.users__delete:hover {
+  -webkit-box-shadow: 0 0 3px 3px red;
+          box-shadow: 0 0 3px 3px red;
+  background-color: red;
 }
 
 .wrapper {

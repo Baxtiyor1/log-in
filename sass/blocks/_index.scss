@@ -18,7 +18,7 @@
         color: #fff;
         border: none;
         border-radius: 5px;
-        box-shadow: 0 0 3px 3px #fff;
+        box-shadow: 0 0 2px 2px #fff;
         cursor: pointer;
         transition: 0.5s;
         &:hover{
@@ -33,6 +33,7 @@
         display: flex;
         flex-wrap: wrap;
         list-style-type: none;
+        justify-content: center;
     }
     &__item{
         padding:15px 0;
@@ -66,5 +67,19 @@
         display: inline-block;
         text-decoration: none;
         font-size: 20px;
+    }
+    &__delete{
+        margin-top: 25px;
+        padding: 5px 15px;
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(157, 137, 137);
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: bold;
+        &:hover{
+            box-shadow: 0 0 3px 3px red;
+            background-color: red;
+        }
     }
 }
